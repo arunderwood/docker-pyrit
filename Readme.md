@@ -21,7 +21,7 @@
 In order to run Docker images you must have the Docker daemon installed.
 
 * Ubuntu - https://docs.docker.com/install/linux/docker-ce/ubuntu/
-* Mac OS = https://docs.docker.com/docker-for-mac/install/
+* Mac OS - https://docs.docker.com/docker-for-mac/install/
 * Docker is available for many other platforms.  I have no reason to expect this package won't work on those other systems, but I have not tested them.  
 
 ### Nvidia-docker (Optional)
@@ -32,8 +32,8 @@ Nvidia-docker does not currently support MacOS but I have had success running it
 
 Before you install nvidia-docker:
 
-* Install the latest nvidia graphics drivers for your platform.  These must be the official binary drivers, nvidia-docker will not work with Nouveau.
-* Do not install Docker.  If you have Docker installed, the `nvidia-docker` will attempt to integrate with it but this gave me nothing but trouble.  In the end, I purged Docker CE and let `nvidia-docker` install the correct version as a dependency.
+* Install the latest Nvidia graphics drivers for your platform.  These must be the official binary drivers, nvidia-docker will not work with Nouveau.
+* Do not install Docker.  If you have Docker installed, the nvidia-docker package will attempt to integrate with it but this gave me nothing but trouble.  In the end, I purged Docker CE and let nvidia-docker install the version it wanted.
 
 ## Usage
 
